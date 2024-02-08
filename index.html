@@ -19,7 +19,8 @@
                 <i class="fa-solid fa-pause"></i>
                 Pause
             </button>
-            <button class="button" onclick="board = createGrid(5, 5); draw(); update();">
+            <input id="grid-size" type="number" value="10">
+            <button class="button" onclick="let size = parseInt(document.getElementById('grid-size').value); board = createGrid(size, size); draw(); update();">
                 <i class="fa-solid fa-border-all"></i>
                 Create Grid
             </button>
